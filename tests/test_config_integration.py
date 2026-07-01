@@ -183,7 +183,7 @@ def test_bun_load_env_prefers_canonical_yaml_over_ambient_provider_env(tmp_path)
             """\
             image_generation:
               openai:
-                api_key: "sk-canonical-openai"
+                api_key: "test-openai-key"
                 image_model: "gpt-image-1"
             """
         ),
@@ -318,7 +318,7 @@ def test_bun_load_env_does_not_mask_invalid_skill_root_yaml(tmp_path, yaml_text)
         env={
             "PATH": os.environ["PATH"],
             "HOME": str(tmp_path / "home"),
-            "OPENAI_API_KEY": "sk-test",
+            "OPENAI_API_KEY": "test-ambient-openai-key",
         },
         capture_output=True,
         text=True,

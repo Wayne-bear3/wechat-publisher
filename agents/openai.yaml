@@ -1,0 +1,8 @@
+interface:
+  display_name: "WeChat Publisher"
+  short_description: "创作、排版并发布微信公众号草稿"
+  brand_color: "#16A34A"
+  default_prompt: "Use $wechat-publisher to turn this topic into a WeChat Official Account draft."
+
+policy:
+  allow_implicit_invocation: true
